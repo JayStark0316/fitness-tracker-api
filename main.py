@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from starlette.responses import JSONResponse
 
-from commons.database import db_manager
+from commons.utils.database import db_manager
 from commons.exceptions.base_api_exception_handler import BaseAPIException
 from commons.exceptions.default_error_api_response import DefaultApiErrorResponse
 

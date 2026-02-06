@@ -9,3 +9,4 @@ testcontainers
 pydantic-settings
 
 black
+pydantic

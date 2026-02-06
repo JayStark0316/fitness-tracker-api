@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-from commons.app_settings import get_settings
+from commons.utils.app_settings import get_settings
 
 
 class MongoDbManager:
