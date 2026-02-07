@@ -7,6 +7,8 @@ pytest
 httpx
 testcontainers
 pydantic-settings
+cryptography
+pycryptodome
 
 black
 pydantic

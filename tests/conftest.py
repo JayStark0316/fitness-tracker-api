@@ -1,3 +1,4 @@
+import json
 import os
 
 import dotenv
@@ -46,7 +47,7 @@ def clean_database(db_client):
     db_client.close()
     db_manager.close()
 
-
+@pytest.fixture(scope="session")
 def client(db_client):
     """
     Configures a test database for the application and provides a test client wrapped
@@ -69,3 +70,14 @@ def client(db_client):
         yield test_client
 
     app.dependency_overrides.clear()
+
+
+@pytest.fixture(scope="session")
+def read_data_from_file():
+    with open('tests/test_data.json', 'r') as file:
+        test_data = json.load(file)
+    yield test_data
+
+@pytest.fixture(scope="session")
+def get_test_email_data(read_data_from_file):
+    return read_data_from_file['test_emails'][0]
