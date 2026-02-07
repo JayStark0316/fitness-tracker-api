@@ -81,3 +81,8 @@ def read_data_from_file():
 @pytest.fixture(scope="session")
 def get_test_email_data(read_data_from_file):
     return read_data_from_file['test_emails'][0]
+
+
+@pytest.fixture(scope="session")
+def test_user_data(read_data_from_file):
+    return read_data_from_file['sample_user_db_model']
