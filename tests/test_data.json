@@ -1,12 +1,10 @@
 {
-  "sample_user_db_create": {
+  "sample_user_db_model": {
     "email": "pXN4DiMT8uYBi5qQJuQuHYh2EG5rgRQbArnsJLRLzizxnhEn8qw+3Api6L7d7rIY3bCqTQBgRg==",
     "hashed_email": "76ed2f9d2c96acb78661927e397655028b4f8bae3a52e3e4a2a4f64f75ea0d1a",
-    "display_name": "",
-    "password": "",
-    "role": "",
-    "created_on": "",
-    "updated_on": ""
+    "display_name": "SAMPLE_USER_01",
+    "password": "$2b$12$wVmS5RtubR1nLi4APlvdQOZE5tG37BT5PNqwtp8l05cKJ5i/ZznNO",
+    "role": "USER"
   },
   "test_emails":[
     {
