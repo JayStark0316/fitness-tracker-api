@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-dotenv
+pymongo
+bcrypt
+pytest
+httpx
+testcontainers
+pydantic-settings
+cryptography
+pycryptodome
+
+black
+pydantic

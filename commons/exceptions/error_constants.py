@@ -1,0 +1,6 @@
+BAD_REQUEST_ERROR = "Either the request is malformed or an invalid argument has been encountered. Please check and try again"
+INTERNAL_SERVER_ERROR = "An internal error has occurred while serving your request. Please contact administrator"
+RESOURCE_NOT_FOUND_ERROR = "Not able to access the requested resource. Please check your request and try again"
+CONFLICT_ERROR = "Unable to complete the request due to a resource conflict. Please check and try again."
+PERMISSION_DENIED_ERROR = "You do not have the right permissions to access this resource. Please contact the administrator."
+UNAUTHORIZED_ERROR = "You are not authorized to access the resource. Please check the credentials and try again"
