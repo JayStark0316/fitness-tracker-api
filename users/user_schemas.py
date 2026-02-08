@@ -1,8 +1,11 @@
+from datetime import datetime
 from typing import Optional
+from uuid import UUID
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
-class RequestCreateUserSchema(BaseModel):
+
+class UserCreateRequest(BaseModel):
     """
     Schema for creating a user request.
 
@@ -42,7 +45,14 @@ class ResponseUserSchema(BaseModel):
     :ivar update_on: Timestamp representing when the user was last updated.
     :type update_on: str
     """
-    id: str
+    id: UUID
     display_name: Optional[str] = Field(default=None)
     created_on: str
-    update_on: str
+    updated_on: str
+
+    @field_validator('created_on','updated_on', mode='before')
+    @classmethod
+    def date_to_string(cls, v):
+        if isinstance(v, datetime):
+            return str(v)
+        return v
