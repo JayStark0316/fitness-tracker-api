@@ -1,6 +1,8 @@
 services:
   app:
     build: .
+    depends_on:
+      - mongo-db-instance
     ports:
       - "8080:8080"
     volumes:

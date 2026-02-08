@@ -6,9 +6,10 @@ bcrypt
 pytest
 httpx
 testcontainers
+pydantic
 pydantic-settings
 cryptography
 pycryptodome
+names_generator
 
 black
-pydantic
